@@ -92,7 +92,7 @@ export default function Home() {
           {results.length === 0 && <div className="empty-state"><FileText size={28} /><h3>No papers match that search</h3><p>Try a broader term or select all papers.</p><button onClick={() => { setQuery(""); setTheme("All papers"); }}>Reset filters</button></div>}
         </section>
 
-        <section className="footer-note"><BookOpen size={24} /><div><strong>Read the original study</strong><p>Each article page links to its DOI and available publisher or library access. Article PDFs are not redistributed on this public site.</p></div></section>
+        <section className="footer-note"><BookOpen size={24} /><div><strong>Read the original study</strong><p>Each article page links to its DOI and available publisher or library access. Four open-access PDFs can be viewed here under their Creative Commons licences.</p></div></section>
       </main>
       <footer className="site-footer"><span>RESEARCH 2026 <b>•</b> CQU READING LIBRARY</span><span>Built for critical reading, not a substitute for the full paper.</span></footer>
     </div>
