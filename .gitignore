@@ -3,4 +3,5 @@ node_modules/
 out/
 .env*
 *.pdf
+!public/papers/*.pdf
 full-text-local/

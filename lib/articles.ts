@@ -17,6 +17,7 @@ export type Article = {
   caveat: string;
   tags: string[];
   fullTextUrl?: string;
+  hostedPdf?: string;
   libraryUrl?: string;
 };
 
@@ -91,6 +92,7 @@ export const articles: Article[] = [
     caveat: "Industry 4.0 is broader than AI-enabled delay management.",
     tags: ["Australia", "Construction 4.0", "training"],
     fullTextUrl: "https://www.mdpi.com/2075-5309/13/9/2324",
+    hostedPdf: "/papers/soltani-2023.pdf",
   },
   {
     slug: "regona-ai-technologies-australia",
@@ -109,6 +111,7 @@ export const articles: Article[] = [
     caveat: "Its perception-focused evidence does not directly measure firm-level readiness or delay mitigation.",
     tags: ["Australia", "perceptions", "AI awareness"],
     fullTextUrl: "https://www.mdpi.com/2199-8531/8/1/16",
+    hostedPdf: "/papers/regona-2022.pdf",
   },
   {
     slug: "shang-ai-project-management-adoption",
@@ -162,6 +165,7 @@ export const articles: Article[] = [
     caveat: "Its sample spans sectors and is outside Australia; construction-specific variables need to be added.",
     tags: ["SMEs", "TOE framework", "firm size"],
     fullTextUrl: "https://www.mdpi.com/2071-1050/16/5/1864",
+    hostedPdf: "/papers/badghish-2024.pdf",
   },
   {
     slug: "wuni-integrated-digital-delivery-barriers",
@@ -232,6 +236,7 @@ export const articles: Article[] = [
     caveat: "The search ended in 2022; pair it with newer studies in this library.",
     tags: ["systematic review", "project management", "forecasting"],
     fullTextUrl: "https://www.mdpi.com/2076-3417/13/8/5014",
+    hostedPdf: "/papers/taboada-2023.pdf",
   },
 ];
 
