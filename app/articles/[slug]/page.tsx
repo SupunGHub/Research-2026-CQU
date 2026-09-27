@@ -1,10 +1,20 @@
 import Link from "next/link";
 import { notFound } from "next/navigation";
+import type { Metadata } from "next";
 import { ArrowLeft, ArrowUpRight, BookOpen, ExternalLink, FileText, Lightbulb, ShieldAlert } from "lucide-react";
 import { articleBySlug, articles } from "@/lib/articles";
 
 export function generateStaticParams() {
   return articles.map((article) => ({ slug: article.slug }));
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ slug: string }> }): Promise<Metadata> {
+  const { slug } = await params;
+  const article = articleBySlug(slug);
+  return {
+    title: article ? `${article.title} | Research 2026 CQU` : "Article not found | Research 2026 CQU",
+    description: article?.summary,
+  };
 }
 
 export default async function ArticlePage({ params }: { params: Promise<{ slug: string }> }) {
